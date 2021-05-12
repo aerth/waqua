@@ -1,2 +1,2 @@
-# weth-made-easy
-wrap & unwrap your eth the easy way!
+# waqua-made-easy
+wrap & unwrap your aqua the easy way!

@@ -56,8 +56,10 @@ $(() => {
                 return "0xc778417e063141139fce010982780140aa0cd5ab";
             case 42:
                 return "0xd0a1e359811322d97991e03f863a0c30c2cf029c";
+            case 61717561:
+                return "0xC387a0577a8B15FE5b9e007F48e933E41E95B321";
             default:
-                alert("network not supported!");
+                alert("network " + chainId + " not supported!");
                 return "";
         }
     }
@@ -85,7 +87,7 @@ $(() => {
 
     function setWethBalance(address, contract) {
         contract.methods.balanceOf(address).call().then((balance) => {
-            $("#yourWethBalance").text((balance / 1e18).toFixed(5) + " WETH");
+            $("#yourWethBalance").text((balance / 1e18).toFixed(5) + " WAQUA");
         }).catch(function (err) {
             alert(err);
         })
@@ -93,7 +95,7 @@ $(() => {
 
     function setEthBalance(address) {
         web3.eth.getBalance(address).then((balance) => {
-            $("#yourEthBalance").text((balance / 1e18).toFixed(5) + " ETH");
+            $("#yourEthBalance").text((balance / 1e18).toFixed(5) + " AQUA");
         }).catch(function(err) {
             alert(err);
         });
@@ -109,6 +111,8 @@ $(() => {
                 return "https://rinkeby.etherscan.io/api?module=account&action=txlist&address=" + address;
             case 42:
                 return "https://kovan.etherscan.io/api?module=account&action=txlist&address=" + address;
+            case 61717561:
+                return "https://explorer.aqua.signal2noi.se/address/" + address;
             default:
                 return "";
         }
@@ -124,6 +128,8 @@ $(() => {
                 return "https://rinkeby.etherscan.io/address/";
             case 42:
                 return "https://kovan.etherscan.io/address/";
+            case 61717561:
+                return "https://explorer.aqua.signal2noi.se/address/";
             default:
                 return "";
         }
