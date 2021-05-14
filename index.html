@@ -1,39 +1,53 @@
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAQUA made easy</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="https://info.aquacha.in/latest/images/aqua-icon-200.png">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./bundle.js"></script>
 </head>
 <body>
-<div class="jumbotron">
-    <div id="titles">
-        <h1>WAQUA made easy</h1>
-        <h2>Wrap and un-wrap your aquachain here!</h2>
-    </div>
-</div>
-<div id="panel">
-    <h1>Your details</h1>
-    <div class="yourInfo">
-        <h3 id="yourAddress">AQUA Address</h3>
-        <h3 id="yourEthBalance">AQUA balance</h3>
-        <h3 id="yourWethBalance">WAQUA balance</h3>
-        <br>
-    </div>
-    <div class="wrap">
-        <input id="wrapAmount" type="number" placeholder="Amount in AQUA"/>
-        <br>
-        <br>
-        <button id="wrapButton" class="btn btn-danger">Wrap</button>
-    </div>
-    <br>
-    <div class="unwrap">
-        <input id="unwrapAmount" type="number" placeholder="Amount in WAQUA"/>
-        <br>
-        <br>
-        <button id="unWrapButton" class="btn btn-primary">Un-Wrap</button>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div id="panel">
+                <h2>Aqua Wrapper</h2>
+                <div class="subhead">Exchange AQUA for WAQUA</div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="subhead">
+                Details
+            </div>
+            <div class="yourInfo" align="left">
+                <div class="web3" id="yourAddress">AQUA Address</div>
+                <div class="web3" id="yourEthBalance">AQUA balance</div>
+                <div class="web3" id="yourWethBalance">WAQUA balance</div>
+            </div>
+            <div class="card-input">
+                <div class="subhead">
+                    AQUA to WAQUA
+                </div>
+                <div class="wrap">
+                    <input class="amount" id="wrapAmount" inputmode="decimal"  type="text" placeholder="0.0"/>
+                    <br>
+                    <button id="wrapButton" class="btn">Wrap</button>
+                </div>
+                <div class="subhead">
+                    WAQUA to AQUA
+                </div>
+                <div class="unwrap">
+                    <input class="amount" id="unwrapAmount" inputmode="decimal"  type="text" placeholder="0.0"/>
+                    <br>
+                    <button id="unWrapButton" class="btn">Un-Wrap</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>

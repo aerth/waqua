@@ -1,0 +1,111 @@
+#titles
+{
+    text-align: center;
+}
+
+#page
+{
+    margin:5%;
+}
+
+#panel {
+    margin: 5%;
+}
+*{
+  font-family: 'Merriweather Sans', sans-serif;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body {
+    background-image: url(../img/waquabg.png);
+    line-height: 1;
+    color: #ccc;
+}
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 21px;
+  color: #084334;
+}
+.subhead{
+    color: #078f6b;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    margin-bottom: 48px;
+    min-height: 90vh;
+    overflow: hidden auto;
+    align-items: center;
+    padding: 32px 16px;
+}
+.card {
+    background: #0e0f0f;
+    border-radius: 32px;
+    max-width: 600px;
+    width: 100%;
+    font-size: 24px;
+    box-shadow: #010301 10px 10px 20px -8px;
+    z-index: 5;
+}
+.card-header {
+    padding: 8px;
+    border-bottom: 1px solid #084334;
+}
+.card-body {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    padding: 24px;
+}
+.wrap {
+    display: inline-flex;
+}
+.unwrap {
+    display: inline-flex;
+}
+.amount {
+    color: #54867c;
+    outline: none;
+    border: none;
+    flex: 1 1 auto;
+    background-color: transparent;
+    padding: 8px 24px;
+}
+.yourInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.web3 {
+    position: relative;
+    padding: 8px;
+}
+.btn {
+    display: inline-flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    width: 200px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1e9d7d;
+    box-shadow: #000000 5px 5px 10px -4px;
+}
+.card-input {
+  padding: 32px 12px;
+}
